@@ -1,0 +1,182 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-nav{
+  background-color: #43281c;
+  color:#fbf2c0;
+  font-size:16px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:normal;
+}
+.logo{
+  height:25px;
+  position: relative;
+  top:3px;
+}
+.box-title{
+  color:#885a2d;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.items{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order {
+  grid-area:order;
+   box-shadow: 2px 0 5px #eee1d5;
+  border-radius:10px;
+  padding:20px;
+  background-color: #eee1d5;
+}
+.payment { 
+  grid-area:payment;
+  background-color: ;
+  border-radius: 10px;
+  padding:20px;
+   
+}
+.total {
+  grid-area:total;
+   background-color: #eee1d5;
+  box-shadow: 2px 0 5px #eee1d5;
+  border-radius: 10px;
+  padding:20px;
+}
+
+.page{
+  display:grid;
+  grid-template-areas: 
+  "order order  payment" 
+  "order order  payment"
+  "total total  total";
+  row-gap: 15px;
+  width:100%;
+  padding:30px;
+  margin:0 auto;
+  column-gap: 15px;
+}
+
+.user-input{
+  background-color: rgba(0,0,0,0);
+  border:2px #885a2d solid;
+  border-radius:100px;
+  padding: 8px;
+  width:100%;
+  text-indent: 18px;
+  font-size:18px
+  
+}
+.user-input-label{
+  position: absolute;
+  color:#885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  left:25px;
+  top:-7px;
+  padding:0 2px;
+}
+.input-group{
+  position:relative;
+  margin-bottom: 20px;
+}
+.short-input{
+  width: 200px;
+}
+
+.items-option-list{
+  grid-area:options;
+  color:#B08968;
+  list-style:none;
+  margin:0;
+  padding:0;
+  font-size:14px;
+  
+}
+
+.quantity{
+  grid-area:quantity
+}
+.title{
+  grid-area: title
+}
+.price{
+  grid-area: price
+}
+.item-option{
+ margin-bottom: 5px; 
+}
+
+.item{
+  border-bottom:2px solid #DDB892;
+  display: grid;
+  padding: 10px 0;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: "quantity title price"
+  "quantity options price";
+  row-gap: 8px;
+}
+
+.total{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  
+}
+.totals-table{
+  width:100%;
+  max-width:500px;
+  margin-bottom:30px;
+}
+
+tr{
+  display:table-row;
+  vertical-align:inhert;
+  border-color:inherit;
+  
+}
+
+tbody{
+  display:table-row-group;
+  vertical-align:middle;
+  border-color:inherit;
+}
+td{
+   padding:10px
+}
+
+.order-btn{
+  background-color:#885a2d;
+  color:#fbf2c0;
+  font-weight:bolder;
+  border:none;
+  padding:10px 30px;
+  width:100%;
+  border-radius:100px;
+  font-size:16px
+}
+.final-totals{
+  font-weight:bold;
+}
+ 
+.cc-box{
+  background-color:#eee1d5;
+  border-radius: 10px;
+  padding:20px;
+  margin: 10px;
+  width: 100%;
+}
+

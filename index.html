@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <title>checkout</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+   <nav class="main-nav">
+     <h1>
+       <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffe masters logo" class="logo"/>
+       Coffee Masters
+     </h1>
+   </nav>
+ <div class="page">
+   <section class="order box">
+     <h2 class="box-title">Item</h2>
+     <ul class="items">
+       <li class="item">
+         <div class="quantity">1x</div>
+         <div class="title">cappucino</div>
+         <div class="price">$6.00</div>
+         <ul class="item-options-list"><li class="item-option">Light Foam</li></ul>
+       </li>
+       <li class="item">
+         <div class="quantity">1x</div>
+         <div class="title">cappucino</div>
+         <div class="price">$7.90</div>
+         <ul class="item-options-list"><li class="item-option">Almond Milk</li>
+         <li class="item-option">Double Espresso Shot</li>
+         </ul>        
+       </li>
+       <li class="item">
+         <div class="quantity">1x</div>
+         <div class="title">Croissant</div>
+         <div class="price">$5.30</div>
+         <ul class="item-options-list"><li class="item-option">Butter</li></ul>
+       </li>
+     
+   </section>
+
+   <section class="payment">
+     
+     <div class="cc-box">
+       <h2 class="box-title">NAME</h2>
+     <div class = "input-group">
+       <label class="user-input-label" for=
+         "name">Name for order</label>
+       <input type="text" class="user-input" id="name" />
+     </div>
+     </div>
+     <div class= "cc-box">
+       <h2 class="box-title">PAYMENT</h2>
+     <div class="input-group">
+       <label class="user-input-label" for=
+         "name">Card Number</label>
+       <input type="text" class="user-input " id="name" />
+     </div>
+       <div class="input-group">
+       <label class="user-input-label" for=
+         "name">CVV Number</label>
+       <input type="text" class="user-input short-input" id="name" />
+     </div>
+     </div>
+     
+   </section>
+
+   <section class="total">
+     <table class="totals-table">
+       <tr>
+         <td>Subtotal</td>
+         <td>$19.27</td>
+       </tr>
+       <tr>
+         <td>Tax</td>
+         <td>$0.96</td>
+       </tr>
+       <tr class="final-totals">
+         <td>Total</td>
+         <td>$20.23</td>
+       </tr>
+     </table>
+     <button class="order-btn">Place Order</button>
+   </section>
+ </div>
+   
+</body>
+
+</html>
